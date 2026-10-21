@@ -460,7 +460,7 @@ var/list/turf_list = typesof(/turf) + "Cancel"
 	else
 		usr << "\blue Okay then."
 
-var/list/pedallist = list("kotowasiy", "neek", "jorn", "kypa", "sakhan", "randysandy", "alekscr", "hydrated12", "shiggypiggy", "aquilifer", "sunkeneyes", "grifferman", "meaninglife", "fawkesftk", "muchacocha")
+var/list/pedallist = list("kotowasiy", "neek", "jorn", "kypa", "sakhan", "randysandy", "alekscr", "hydrated12", "shiggypiggy", "aquilifer", "sunkeneyes", "grifferman", "meaninglife", "fawkesftk", "muchacocha","nukechicken64")
 
 
 
