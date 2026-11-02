@@ -39,7 +39,7 @@
 	..()
 
 /client
-	script = "<STYLE>BODY {font: monospace}</STYLE>\n\n\tmacro\n\t\tALT return \"blink-your-cataractic-eyes\"\n\t\tNortheast return \"change-hands\"\n\t\tSoutheast return \"break-pull\"\n\t\tDelete return \"consume\"\n\t\tInsert return \"use\"\n\t\tShift return \"Prepare-to-throw-it\"\n"
+	script = "<STYLE>BODY {font: monospace}</STYLE>\n\n\tmacro\n\t\tW+REP return \".north\"\n\t\tA+REP return \".west\"\n\t\tS+REP return \".south\"\n\t\tD+REP return \".east\"\n\t\tSpace return \"change-hands\"\n\t\tE return \"Auto-equip\"\n\t\tQ return \"Drop-item\"\n\t\tT return \"say\"\n\t\tR return \"Prepare-to-throw-it\"\n\t\tZ return \"use\"\n\t\tALT return \"blink-your-cataractic-eyes\"\n\t\tNortheast return \"change-hands\"\n\t\tSoutheast return \"break-pull\"\n\t\tDelete return \"consume\"\n\t\tInsert return \"use\"\n"
 
 
 

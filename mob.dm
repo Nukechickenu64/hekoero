@@ -141,6 +141,31 @@
 	set name = "Drop item"
 	set category = "Item interraction"
 	src.dropitem(usr.item)
+/mob/verb/auto_equip()
+	set name = "Auto equip"
+	set category = "Item interraction"
+	var/obj/item/held_item = src.item
+	if(!istype(held_item) || src.stunned || src.dead)
+		return
+	if(held_item.merged || held_item.cursed)
+		src << "\red You can't put this item away."
+		return
+	if(istype(held_item, /obj/item/clothes) && !src.clothes)
+		src.wearitem()
+		return
+	if(!src.clothes)
+		src << "\red You have no clothes on!"
+		return
+	if(istype(held_item, /obj/item/key) && !src.pocket)
+		src.pocket()
+	else if(held_item.beltable && held_item.size < 4 && !src.belt)
+		src.beltitem(held_item)
+	else if(held_item.size < 3 && !src.hidden)
+		src.hiditem(held_item)
+	else if(held_item.size < 3 && !src.hidden2)
+		src.hiditem2(held_item)
+	else
+		src << "\red There is no free slot that fits this item."
 /mob/verb/wearitem()
 	set name = "Wear item"
 	set category = "Item interraction"

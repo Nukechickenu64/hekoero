@@ -30,6 +30,18 @@ The source was reconstructed from the compiled neek.dmb. Only credits.dm, darkne
 
 Check Github Releases for the host files, which include koto's .rsc file containing unused and old assets from development which aren't actually referenced by the final .dmb.
 
+## Controls
+
+- **WASD**: move (hold to keep moving). Arrow keys still work.
+- **Space**: swap active hands.
+- **E**: auto-equip the held item, trying clothing, the key pocket, belt, then left and right inner pockets. Occupied slots are never replaced; storage requires clothing.
+- **Q**: drop the item in the active hand.
+- **T**: open the say message prompt.
+- **R**: toggle throw mode (replaces Shift).
+- **Z**: activate the item in the active hand.
+
+The other original shortcuts remain available.
+
 ## Speaker (eSpeak)
 
 The "speaker" item (speaker.dm) uses eSpeak 1.48 (https://espeak.sourceforge.net/). Copy the whole eSpeak folder, including espeak-data, next to neek.dmb, so it looks like /neekothingfolder/eSpeak/command_line/espeak.exe
